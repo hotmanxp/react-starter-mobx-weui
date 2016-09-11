@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import 'public.less';
+
+
+
+//工具函数
+
+//清除浮动
+.cf:after{content:"";display:table;clear:both}
+.cf{zoon:1}//ie6,ie7
+
+
+//flex布局
+.display-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.flex(@value) {
+    -webkit-box-flex: @value ;
+    -webkit-flex: @value ;
+    -moz-box-flex: @value ;
+    -moz-flex: @value;
+    -ms-flex: @value;
+    flex: @value ;
+    overflow: hidden;
+}
+
+.flex-1 {
+    .flex(1);
+}
+
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+}
+
+.align-items-end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    align-items: flex-end;
+}
+
+
+
+
+.app-checkbox{
+	width:60*@px;
+	display:none;
+	& + label:before{
+		 content: "\e62b";
+		 color:#333;
+	}
+	&:checked + label:before{
+		content: "\e629";
+		color:@main-cl;
+	}
+}
