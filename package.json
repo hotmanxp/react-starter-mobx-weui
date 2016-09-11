@@ -1,8 +1,8 @@
 {
-  "name": "dashguys",
+  "name": "starter",
   "private": true,
   "version": "0.0.1",
-  "description": "dashguys-weixin",
+  "description": "starter-mobx-react",
   "main": "",
   "scripts": {
     "start": "node server.js --env=dev",
@@ -21,9 +21,7 @@
   },
   "repository": "",
   "keywords": [
-    "dashguys",
-    "健身",
-    "共享经济"
+    "keywords"
   ],
   "author": "ethan_leong@ qq@6923102",
   "devDependencies": {
